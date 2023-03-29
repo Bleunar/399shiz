@@ -1,0 +1,267 @@
+@font-face {
+    font-family: 'graduate';
+    src: url(Graduate-Regular.ttf);
+}
+
+
+
+.b{
+    /* border: 2px solid red; */
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body{
+    background: rgb(206, 99, 99);
+    height: 10000px;
+}
+h4{
+    font-family: graduate;
+}
+.seperator{
+}
+
+
+/* NavBar */
+.nav{
+    position:fixed;
+    background-color: #f3eed9;
+    z-index: +1;
+    display: flex;
+    flex-direction: row;
+}
+.navContainer{
+    gap: 20px;
+    width: 100%;
+    padding: 5px;
+}
+.navContainer hr{
+    margin: 0px;
+}
+.logoName{
+    display: flex;
+    justify-content: space-between;
+}
+.logoName div{
+    display: flex;
+    align-items: center;
+}
+.logoName a{
+    text-decoration: none;
+}
+.logoName img{
+    height: 30px;
+    margin-right: 10px;
+}
+.logoName h1, a, u{
+    font-family: 'graduate';
+    font-weight: 900;
+    margin: 0px;
+    text-decoration: none;
+    color: black;
+}
+.navOptions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navOptions ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.navOptions li{
+    border-radius: 8px;
+    height: fit-content;
+
+}
+.navOptions li:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transition: 500ms;
+}
+.navOptions a{
+    height: 20px;
+    border-radius: 8px;
+    color: black;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+
+
+}
+.navOptions a:hover{
+    color: white;
+    transition: 500ms;
+}
+.cart img{
+    height: 30px;
+}
+
+
+/* Hero Section */
+.hero{
+    background: url(heroSectBackground.png);
+    background-size:cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    padding: 10%;
+    flex-direction: column;
+    
+}
+.content{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+.hero img{
+    height: 10%;
+}
+.hero h1{
+    font-family: 'graduate';
+    font-size: 400%;
+    text-shadow: 3px 3px black, 6px 6px rgb(92, 92, 92), 9px 9px rgb(168, 168, 168);
+    color: rgb(233, 233, 233);
+    font-weight: 800;
+    text-align: center;
+}
+.hero a , u{
+    font-family: graduate;
+    font-weight: 900;
+    font-size: 200%;
+    height: fit-content;
+    width: 50%;
+    background-color: #EC2323;
+    padding: 5px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    border: 2px solid black;
+}
+.hero a:hover{
+    color: #EC2323;
+    background-color: black;
+    border: 2px solid white;
+    transition: 500ms;
+}
+
+
+
+.section{
+    height: fit-content;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+
+/* Section 1 */
+
+.services{
+    background-color: rgba(255, 255, 255, 0.329);
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+.services h1{
+    font-family: 'graduate';
+    font-size: 5vh;
+    font-weight: 900;
+}
+.contain{
+    display: flex;
+    flex-direction: row;
+}
+.cards{
+    text-align: left;
+    background-color: rgba(255, 235, 205, 0.329)!important;
+    padding: 3%;
+    border: 1px solid black;
+    margin: 1%;
+    border-radius: 10px;
+}
+.cards h2{
+    font-family: 'graduate';
+}
+
+/* Menu */
+.menu{
+    background-color: rgba(255, 255, 255, 0.329);
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 100%;
+    border-radius: 10px;
+    padding: 2%;
+}
+.menu h4{
+    font-family: 'graduate';
+    font-size: 5vh;
+    font-weight: 900;
+}
+.productCard{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3%;
+    gap: 2%;
+    
+}
+.product{
+    border: 2px solid black;
+    background:url(product-images/jolibee-y1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 50%;
+    width: 33%;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items:end;
+}
+.productTitle{
+    font-size: large;
+    font-family: graduate;
+    background-color:#f86363;
+    color: white;
+    padding: 2%;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+.orderNow{
+    font-family: 'graduate';
+    font-size: 100%;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    text-align: center;
+    background-color: #EC2323;
+    text-decoration: none;
+    padding: 1%;
+    border-radius: 15px;
+}
+
+@media only screen and (max-width: 750px) {
+    .contain{
+        flex-direction: column;
+    }
+  }
